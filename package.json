@@ -1,0 +1,30 @@
+{
+  "name": "drug-reactions-server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "babel-core": "6.26.3",
+    "cors": "^2.8.5",
+    "express": "4.16.3",
+    "fs": "0.0.2",
+    "sql.js": "0.5.0",
+    "sqlite3": "^4.0.2",
+    "vue": "^2.5.22"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "concurrently": "3.6.1",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.10.0",
+    "nodemon": "^1.18.3"
+  }
+}

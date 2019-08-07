@@ -1,0 +1,87 @@
+.drug-component-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.drug-component-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.drug-component-top p {
+    margin: 0;
+}
+
+.drug-remove-btn {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+}
+
+.drug-remove-btn:before,
+.drug-remove-btn:after {
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -2px;
+    width: 20px;
+    height: 3px;
+    background-color: #808080;
+    content: "";
+    position: absolute;
+}
+
+.drug-remove-btn:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.drug-remove-btn:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.drug-remove-btn:hover,
+.drug-remove-btn:active {
+    opacity: 0.7;
+}
+
+.drug-component-autocomplete {
+    width: -moz-calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: -o-calc(100% - 50px);
+    width: calc(100% - 50px);
+}
+
+.drug-component-button {
+    width: 30px;
+}
+
+.drug-remove-btn:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.drug-component-autocomplete,
+.autocomplete-component,
+.autocomplete-wrapper {
+    outline: none;
+}

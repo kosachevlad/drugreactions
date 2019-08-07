@@ -1,0 +1,49 @@
+.reactions-component-container {
+    height: 46vh;
+    overflow-y:  auto;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc,
+.ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.-sort-desc:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    top: 10px;
+    left: 10px;
+    border: 4px solid transparent;
+    border-top-color: #3a3b3c;
+    border-bottom: 0;
+}
+
+.-sort-asc:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    top: 10px;
+    left: 10px;
+    border: 4px solid transparent;
+    border-top: 0;
+    border-bottom-color: #3a3b3c;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.rt-thead.-headerGroups {
+    display: none;
+}
+
+.table-header {
+    padding-top: 5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+}

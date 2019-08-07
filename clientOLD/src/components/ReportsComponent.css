@@ -1,0 +1,95 @@
+.reports-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-component-drugs-list {
+    margin-top: 5px;
+    padding-left: 12px;
+    list-style: none;
+}
+
+.reports-component-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-component-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reports-component-top p {
+    margin: 0;
+}
+
+.reports-remove-btn {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+}
+
+.reports-remove-btn:before,
+.reports-remove-btn:after {
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -2px;
+    width: 20px;
+    height: 3px;
+    background-color: #808080;
+    content: "";
+    position: absolute;
+}
+
+.reports-remove-btn:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.reports-remove-btn:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.reports-remove-btn:hover,
+.reports-remove-btn:active {
+    opacity: 0.7;
+}
+
+.reports-component-autocomplete {
+    width: -moz-calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: -o-calc(100% - 50px);
+    width: calc(100% - 50px);
+}
+
+.reports-component-button {
+    width: 30px;
+}
+
+.reports-remove-btn:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.reports-component-bottom {
+    outline: none;
+}
